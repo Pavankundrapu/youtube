@@ -1,0 +1,154 @@
+body{
+  margin: 0px;
+  height: 4000px;
+  background-color: rgb(247, 244, 244);
+  padding-top: 90px;
+  padding-left: 100px;
+  padding-right: 36px;
+}
+.sidebar{
+  position: fixed;
+  background-color: white;
+  top: 60px;
+  left: 0;
+  width: 72px;
+  bottom: 0;
+  border-right-width: 1px;
+  border-right-color: rgb(167, 160, 160);
+  border-right-style: solid;
+  z-index: 101;
+  cursor: pointer;
+}
+.header{
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(167, 160, 160);
+  border-bottom-style: solid;
+  z-index: 100;
+}
+
+.left-portion{
+  display: flex;
+  width: 200px;
+  align-items: center;
+}
+.icons5{
+  height: 25px;
+}
+.icons1{
+  height: 25px;
+  margin-left: 25px;
+}
+.icons2{
+  height: 20px;
+  margin-left: 25px;
+}
+.icons3{
+  height: 35px;
+  margin-left: 25px;
+  padding-right: 30px;
+  border-radius: 50%;
+}
+.middle-portion{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-right: 50px;
+  max-width: 600px;
+
+}
+.last-portion{
+  width: 180px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+.search-bar{
+  flex: 1;
+  width: 0;
+  height: 33px;
+  font-size: 16px;
+}
+.search-bar::placeholder{
+  font-size: 16px;
+  padding-left: 10px;
+}
+.search-button{
+  height: 38px;
+  width: 65px;
+  margin-left: -1px;
+}
+.voice-button{
+  border: none;
+  background-color: none;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.icons4{
+  margin-top: 6px;
+  height: 25px;
+  padding: 4px 6px;
+}
+.notification-icon{
+  position: relative;
+}
+.notification-count{
+  position: absolute;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  top: -5px;
+  right: -9px;
+  padding: 4px 8px;
+  border-radius: 50%;
+}
+.sidebar-icon{
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-icon img{
+  width: 25px;
+}
+.sidebar-icon div{
+  font-size: 10px;
+}
+.search-button,
+.voice-button,
+.tool-button{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-button .tool-tip,
+.voice-button .tool-tip,
+.tool-button .tool-tip
+{
+  position: absolute;
+  bottom: -40px;
+  background-color: rgb(112, 110, 110);
+  color: white;
+  padding: 6px 8px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.15s;
+pointer-events: none;
+  white-space: nowrap;
+}
+.search-button:hover .tool-tip,
+.voice-button:hover .tool-tip,
+.tool-button:hover .tool-tip
+{
+opacity: 1;
+}
